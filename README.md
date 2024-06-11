@@ -70,7 +70,7 @@ git clone https://github.com/your_username/your_repo_name.git
 pip install -r requirements.txt
 ```
 
-- Running the Code:
+- Running the code:
 
 To run the code, follow these steps:
 
@@ -93,8 +93,8 @@ If you use this code in your research, please cite the following paper:
   title     = {[Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?]},
   booktitle = {{Proc. INTERSPEECH 2024}},
   year      = {2024},
-  pages		= {TBD},
-  doi 		= {TBD}
+  pages     = {TBD},
+  doi       = {TBD}
 }
 ```
 
