@@ -1,7 +1,5 @@
 # Title: Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?
 
-## Under construction
-
 ## Abstract:
 
 Recent advancements in speech enhancement techniques have ignited interest in improving speech quality and intelligibility. However, the effectiveness of recently proposed methods is unclear. In this paper, a comprehensive analysis of modern deep learning-based speech enhancement approaches is presented. Through evaluations using the Deep Suppression Noise and Clarity Enhancement Challenge datasets, we assess the performances of three methods: Denoiser, DeepFilterNet3, and FullSubNet+. Our findings reveal nuanced performance differences among these methods, with varying efficacy across datasets. While objective metrics offer valuable insights, they struggle to represent complex scenarios with multiple noise sources. Leveraging ASR-based methods for these scenarios shows promise but may induce critical hallucination effects. Our study emphasizes the need for ongoing research to refine techniques for diverse real-world environments.
@@ -62,7 +60,7 @@ The project is organized as follows:
 
 - Clone this repository:
 ```
-git clone https://github.com/your_username/your_repo_name.git
+git clone https://github.com/candyolivia/is2024_deep_enhancement.git
 ```
 
 - Install the dependencies:
