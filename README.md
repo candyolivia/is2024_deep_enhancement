@@ -1,24 +1,26 @@
 # Title: Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?
 
-##Abstract:
+## Under construction
+
+## Abstract:
 
 Recent advancements in speech enhancement techniques have ignited interest in improving speech quality and intelligibility. However, the effectiveness of recently proposed methods is unclear. In this paper, a comprehensive analysis of modern deep learning-based speech enhancement approaches is presented. Through evaluations using the Deep Suppression Noise and Clarity Enhancement Challenge datasets, we assess the performances of three methods: Denoiser, DeepFilterNet3, and FullSubNet+. Our findings reveal nuanced performance differences among these methods, with varying efficacy across datasets. While objective metrics offer valuable insights, they struggle to represent complex scenarios with multiple noise sources. Leveraging ASR-based methods for these scenarios shows promise but may induce critical hallucination effects. Our study emphasizes the need for ongoing research to refine techniques for diverse real-world environments.
 
-##Authors:
+## Authors:
 
 Candy Olivia Mawalim, Shogo Okada, and Masashi Unoki
 (Japan Advanced Institute of Science and Technology)
 
-##Paper Link:
+## Paper Link:
 
 [Link to your paper on the INTERSPEECH website] (https://www.isca-speech.org/)
 
-##Audio samples:
+## Audio samples:
 Audio samples are available on our [demo page] (https://www.isca-speech.org/).
 
-##Code Description:
+## Code Description:
 
-This repository contains the code used in the paper "Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?" accepted to Interspeech 2024.
+This repository contains the code used in the paper `Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?` accepted to Interspeech 2024.
 
 The code is organized as follows:
 
@@ -39,7 +41,7 @@ Python [version]
 ... (and so on)
 ```
 
-##Installation:
+## Installation:
 
 Clone this repository:
 Bash
@@ -71,7 +73,7 @@ python train.py --config config.json
 Use code with caution.
 content_copy
 
-##Citation:
+## Citation:
 
 If you use this code in your research, please cite the following paper:
 ```
@@ -89,8 +91,11 @@ If you use this code in your research, please cite the following paper:
 
 This code is licensed under the MIT license. See the LICENSE file for details.
 
-##References:
+## References:
 We referred to the following repositories and resources in our code:
-
-
-## Under construction
+- https://github.com/microsoft/DNS-Challenge for dataset of the Deep Noise Suppressor challenge
+- https://claritychallenge.org/docs/cec2/data/cec2_data for dataset of the 2nd Clarity Enhancement challenge 
+- https://www.openslr.org/14/ for Beep dictionary
+- https://github.com/facebookresearch/denoiser for implementation and pre-trained weights for Denoiser model
+- https://github.com/Rikorose/DeepFilterNet for implementation and pre-trained weights for DeepFilterNet model
+- https://github.com/RookieJunChen/FullSubNet-plus for implementation and pre-trained weights for FullSubNet+ model
