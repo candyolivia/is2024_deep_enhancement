@@ -13,65 +13,76 @@ Candy Olivia Mawalim, Shogo Okada, and Masashi Unoki
 
 ## Paper Link:
 
-[Link to your paper on the INTERSPEECH website] (https://www.isca-speech.org/)
+Link to our INTERSPEECH paper is available here (TBD).
 
 ## Audio samples:
-Audio samples are available on our [demo page] (https://www.isca-speech.org/).
+Audio samples are available on our demo page (TBD).
 
 ## Code Description:
 
 This repository contains the code used in the paper `Are Recent Deep Learning-Based Speech Enhancement Methods Ready to Confront Real-World Noisy Environments?` accepted to Interspeech 2024.
 
-The code is organized as follows:
+The project is organized as follows:
 
 ```
-[folder 1]: Description of the contents (e.g., data preprocessing scripts)
-[folder 2]: Description of the contents (e.g., model implementation)
-[folder 3]: Description of the contents (e.g., evaluation scripts)
-... (and so on)
-```
+[dataset]: Required data for running the experiments
+    |-- CEC2
+        |-- train
+            |-- clean
+            |-- noisy
+        |-- eval
+            |-- set1
+                |-- clean
+                |-- noisy
+            |-- set2
+                |-- clean
+                |-- noisy
+    |-- DNS3
+        |-- eval
+            |-- set1
+                |-- clean
+                |-- noisy
+            |-- set2
+                |-- clean
+                |-- noisy
 
-Dependencies:
+[demo_sounds]: Sound files for demonstrations
 
-This code requires the following dependencies:
-```
-Python [version]
-[dependency 1] ([Optional: installation instructions])
-[dependency 2] ([Optional: installation instructions])
+[models]: Speech enhancement models utilized in the experiments
+    |-- DeepFilterNet
+    |-- denoiser
+    |-- FullSubNet-plus
+
+[utils]: Code for preprocessing, extracting Whisper transcript, and calculating WER & Beep-PER
+
 ... (and so on)
 ```
 
 ## Installation:
 
-Clone this repository:
-Bash
+- Clone this repository:
+```
 git clone https://github.com/your_username/your_repo_name.git
-Use code with caution.
-content_copy
-Install the dependencies:
-Bash
+```
+
+- Install the dependencies:
+```
 pip install -r requirements.txt
-Use code with caution.
-content_copy
-Running the Code:
+```
+
+- Running the Code:
 
 To run the code, follow these steps:
 
-Download the necessary data (if applicable). Instructions on how to obtain the data can be found in the [folder name] directory.
-Navigate to the root directory of the project:
-```
-Bash
-cd your_repo_name
-```
-Use code with caution.
-content_copy
-Run the relevant script(s). Instructions on which scripts to run can be found in the corresponding folders.
-Example Usage:
+  - Download the necessary data (the 2nd Clarity Enhancement challenge (CEC2) and the 3rd Deep Noise Supressor (DNS) challenge datasets). The links to the data could be found on the `References`.
+  - Locate the downloaded dataset to the `dataset` directory.
+  - Run the relevant script(s) according to the speech enhancement model in `models` directory. Instructions on which scripts to run can be found in the corresponding folders. More information on each model also could be found at the link of the original source available on the `References`.
 
-Bash
-python train.py --config config.json
-Use code with caution.
-content_copy
+- Example usage of fine-tuning denoiser (after navigate to `denoiser` subsubfolder):
+
+```
+./train.py continue_pretrained=dns64 demucs.hidden=64 dset=train restart=1
+```
 
 ## Citation:
 
