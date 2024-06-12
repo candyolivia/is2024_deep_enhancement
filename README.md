@@ -14,7 +14,7 @@ Candy Olivia Mawalim, Shogo Okada, and Masashi Unoki
 Link to our INTERSPEECH paper is available here (TBD).
 
 ## Audio samples:
-Audio samples are available on our demo page (TBD).
+Audio samples are available on our [demo page](https://candyolivia.github.io/demo/is2024_enhancement/).
 
 ## Code Description:
 
@@ -43,8 +43,6 @@ The project is organized as follows:
             |-- set2
                 |-- clean
                 |-- noisy
-
-[demo_sounds]: Sound files for demonstrations
 
 [models]: Speech enhancement models utilized in the experiments
     |-- DeepFilterNet
@@ -79,7 +77,7 @@ To run the code, follow these steps:
 - Example usage of fine-tuning denoiser (after navigate to `denoiser` subsubfolder):
 
 ```
-./train.py continue_pretrained=dns64 demucs.hidden=64 dset=train restart=1
+./train.py continue_pretrained=dns64 demucs.hidden=48 dset=train restart=1
 ```
 
 ## Citation:
