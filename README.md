@@ -51,7 +51,6 @@ The project is organized as follows:
 
 [utils]: Code for preprocessing, extracting Whisper transcript, and calculating WER & Beep-PER
 
-... (and so on)
 ```
 
 ## Installation:
